@@ -8,6 +8,11 @@ node {
 
 	stage 'SonarQube Analysis'
 //		withSonarQubeEnv('My SonarQube Server'){
-		bat 'mvn -Dsonar.host.url=http://localhost:9000 org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar'
+
+		bat 'mvn -Dsonar.host.url=http://74.96.156.54:9000 org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar'
+
+
+		//Works
+//		bat 'mvn -Dsonar.host.url=http://localhost:9000 org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar'
 //		}	
 }
